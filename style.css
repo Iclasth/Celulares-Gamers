@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -14,13 +15,24 @@ body {
 header {
     position: fixed;
     left: 50%;
+    width: 75vw;
     transform: translateX(-50%);
     display: grid;
     grid-template-columns: 1fr 600px
     ;
     align-items: center;
-    gap: 10px;
+    gap: 100px;
+    
+    
     & img {
         width: 250px;
+    }
+    
+    & nav {
+        
+        & ul {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+        }
     }
 }
