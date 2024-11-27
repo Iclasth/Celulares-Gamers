@@ -9,6 +9,7 @@ body {
     background-color: black;
     color: white;
     font-size: 16px;
+    overflow: hidden;
     
 }
 
@@ -22,6 +23,7 @@ header {
     ;
     align-items: center;
     gap: 100px;
+    z-index: 2;
     
     
     & img {
@@ -42,6 +44,25 @@ section {
     background-image: radial-gradient(#FFCA03, #0E117A);
     height: 100vh;
     position: relative;
+    
+    & .lista {
+        width: 70vw;
+        height: 100%;
+        margin: auto;
+        position: relative;
+        
+        & .item {
+            position: absolute;
+            inset: 0;
+        
+            & .phone-img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 70%;
+            }
+        }
+    }
 }
 
 .setinhas
