@@ -36,3 +36,19 @@ header {
         }
     }
 }
+
+
+section {
+    background-image: radial-gradient(#FFCA03, #0E117A);
+    height: 100vh;
+    position: relative;
+}
+
+.setinhas
+{
+    & button {
+        & img {
+            width: 100px;
+        }
+    }
+}
